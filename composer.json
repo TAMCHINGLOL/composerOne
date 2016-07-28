@@ -1,1 +1,33 @@
-ds
+{
+	"name": "tamchinglol/gitproject0",
+    "description": "tamchinglol usedto test git connect composer at sunaw",
+    "type": "composer-plugin",
+    "keywords": [
+        "framework",
+        "thinkphp",
+        "ORM"
+    ],
+    "homepage": "http://http://www.sunaw.net/",
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "TAMCHINGLOL",
+            "email": "tamchinglol@gmail.com"
+        }
+    ],
+    "require": {
+        "composer-plugin-api":"^1.0"
+    },
+    "require-dev": {
+        "composer/composer": "1.0.*@dev"
+    },
+    "autoload":{
+    	"psr-4":{
+    		"gitproject\\composer\\": "src"
+    	}
+    },
+    "extra": {
+    	"class": "gitproject\\composer\\Plugin"
+    },
+    "minimum-stability": "dev"
+}
